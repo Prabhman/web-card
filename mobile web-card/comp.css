@@ -1,0 +1,218 @@
+body
+{
+	margin: 0;
+	padding: 0;
+	background: url(images/background-images.jpg);
+	background-size: cover;
+}
+a
+{
+	text-decoration: none;
+}
+ol
+{
+	position: absolute;
+	top: 7%;
+	left:5%;
+	transform: translate(-50%,-50%);
+	margin: 0;
+	padding: 0;
+	display: flex;
+	color: #000;
+}
+ol li
+{
+	list-style: none;
+	margin: 0 30px;
+}
+ol li a .fa
+{
+	font-size: 15px;
+	color: #262626;
+	line-height: 20px;
+	transition: .5s;
+}
+
+ol li a
+{
+	position: relative;
+	display: block;
+	width: 20px;
+	height: 20px;
+	background: #fff;
+	text-align: center;
+	transform: perspective(1000px) rotate(-30deg) skew(25deg) translate(0,0);
+	transition: .5s;
+	box-shadow: -20px 20px 10px rgba(0,0,0,0.5);
+} 
+ol li a:before
+{
+	content: '';
+	position: absolute;
+	top: 5px;
+	left: -10px;
+	height: 100%;
+	width: 10px;
+	background: #b1b1b1;
+	transition: .5s;
+	transform: rotate(0deg) skewY(-45deg);
+}
+ol li a:after
+{
+	content: '';
+	position: absolute;
+	bottom: -10px;
+	left: -5px;
+	height: 10px;
+	width: 100%;
+	background: #b1b1b1;
+	transition: .5s;
+	transform: rotate(0deg) skewX(-45deg);
+}
+ol li a:hover
+{
+	transform: perspective(1000px) rotate(-30deg) skew(25deg) translate(20px,-20px);
+	box-shadow: -50px 50px 50px rgba(0,0,0,0.5);
+
+}
+/*------------------------------------
+-----------------------------------
+---------------------------------*/
+ul
+{
+	position: absolute;
+	top: 7%;
+	left: 82%;
+	transform: translate(-50%,-50%);
+	margin: 0;
+	padding: 0;
+	display: flex;
+}
+ul li
+{
+	list-style: none;
+	margin: 0 30px;
+}
+ul li a .fa
+{
+	font-size: 15px;
+	color: #262626;
+	line-height: 20px;
+	transition: .5s;
+	text-decoration: none;
+}
+
+ul li a
+{
+	position: relative;
+	display: block;
+	width: 20px;
+	height: 20px;
+	background: #fff;
+	text-align: center;
+	transform: perspective(1000px) rotate(-30deg) skew(25deg) translate(0,0);
+	transition: .5s;
+	box-shadow: -20px 20px 10px rgba(0,0,0,0.5);
+} 
+ul li a:before
+{
+	content: '';
+	position: absolute;
+	top: 5px;
+	left: -10px;
+	height: 100%;
+	width: 10px;
+	background: #b1b1b1;
+	transition: .5s;
+	transform: rotate(0deg) skewY(-45deg);
+}
+ul li a:after
+{
+	content: '';
+	position: absolute;
+	bottom: -10px;
+	left: -5px;
+	height: 10px;
+	width: 100%;
+	background: #b1b1b1;
+	transition: .5s;
+	transform: rotate(0deg) skewX(-45deg);
+}
+ul li a:hover
+{
+	transform: perspective(1000px) rotate(-30deg) skew(25deg) translate(20px,-20px);
+	box-shadow: -50px 50px 50px rgba(0,0,0,0.5);
+
+}
+.testimonials
+{
+	margin: 200px auto 100px;
+	display: grid;
+	grid-template-columns: repeat(auto-fit,minmax(350px, 1fr));
+	grid-gap: 20px;
+
+}
+	.testimonials .card
+	{
+		position: relative;
+		width: 350px;
+		margin: 0 auto;
+		background: rgba(0,0,0,0.5);
+		padding: 20px;
+		box-sizing: border-box;
+		text-align: center;
+		box-shadow: 0 10px 40px rgba(0,0,0,0.5);
+		overflow: hidden;
+	}
+	.testimonials .card .layer
+	{
+		position: absolute;
+		top: calc(100% - 2px);
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background: linear-gradient(#03a9f4, #e91ee3);
+		z-index: 1;
+		transition: .5s;
+	}
+	.testimonials .card:hover .layer
+	{
+		top: 0;
+	}
+	.testimonials .card .content
+	{
+		position: relative;
+		z-index: 2;
+	}
+	.testimonials .card .content p
+	{
+		font-size: 18px;
+		line-height: 24px;
+		color: #fff;
+	}
+	.testimonials .card .content .image
+	{
+		width: 100px;
+		height: 100px;
+		margin: 0 auto;
+		border-radius: 50%;
+		overflow: hidden;
+		border: 4px solid #fff;
+		box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+	}
+	.testimonials .card .content .details h2
+	{
+		font-size: 18px;
+		color: #fff;
+	}
+	.testimonials .card .content .details span
+	{
+		color: #03a9f4;
+		font-size: 20px;
+		transition: .5s;
+	}	
+	.testimonials .card:hover .content .details span
+	{
+		color: #fff;
+
+	}
